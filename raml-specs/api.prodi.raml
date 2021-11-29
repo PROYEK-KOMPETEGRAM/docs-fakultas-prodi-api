@@ -1,0 +1,60 @@
+#%RAML 1.0
+---
+title: API Program Studi
+baseUri: http://localhost:port/
+version: v1
+
+/prodi:
+    get:
+        description: List atau daftar berisi seluruh program studi
+        response:
+            200:
+                body:
+                    application/json:
+                        examples: |
+                            {
+                                "data": [
+                                    {
+                                        "kode": "A015", 
+                                        "prodi": "Administrasi Pendidikan"
+                                    },
+                                    {
+                                        "kode": "A025", 
+                                        "prodi": "Bimbingan dan Konseling"
+                                    }
+                                ]
+                            }
+    /{kodeProdi}:
+        get:
+            description: Program studi secara spesifik sesuai kode prodi
+            queryParameters:
+                kodeProdi:
+                    displayName: kodeProdi
+                    type: string
+                    description: Kode program studi
+                    example: G505
+            response:
+                200:
+                    body:
+                        application/json:
+                            examples: |
+                                {
+                                    "data": {
+                                        "kode": "G505", 
+                                        "prodi": "Rekayasa Perangkat Lunak", 
+                                        "fakultas": "Kampus UPI Cibiru"
+                                    }
+                                }
+                404:
+                    body:
+                        application/json:
+                            examples: |
+                                {
+                                    "errors": [
+                                        {
+                                        "status": "404", 
+                                        "title": "Tidak ditemukan", 
+                                        "detail": "Kode prodi tidak ditemukan"
+                                        }
+                                    ]
+                                }
