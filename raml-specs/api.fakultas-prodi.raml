@@ -1,0 +1,35 @@
+#%RAML 1.0
+---
+title: API Fakultas Prodi
+baseUri: http://localhost:port/
+version: v1
+
+/fakultas-prodi:
+    get:
+        description: List atau daftar seluruh fakultas atau kampus daerah dan prodi
+        response:
+            200:
+                body:
+                    application/json:
+                        examples: |
+                            {
+                                "data": {
+                                    "universitas": "Universitas Pendidikan Indonesia", 
+                                    "listFakultas": [
+                                        {
+                                        "namaFakultas": "FIP", 
+                                        "listProdi": [
+                                            {
+                                                "kodeProdi": "A015", 
+                                                "namaProdi": "Administrasi Pendidikan"
+                                            }, 
+                                            {
+                                                "kodeProdi": "A025", 
+                                                "namaProdi": "Bimbingan dan Konseling"
+                                            }]
+                                        }
+                                    ]
+                                }
+                            }
+            
+

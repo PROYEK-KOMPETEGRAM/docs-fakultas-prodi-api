@@ -1,0 +1,52 @@
+#%RAML 1.0
+---
+title: API Fakultas Prodi
+baseUri: http://localhost:port/
+version: v1
+
+/fakultas:
+    get:
+        description: List atau daftar seluruh fakultas atau kampus daerah
+        response:
+            200:
+                body:
+                    application/json:
+                        examples: |
+                            {
+                                "data": [
+                                    {
+                                    "namaFakultas": "FIP"
+                                    }
+                                ]
+                            }
+    /{namaFakultas}/prodi:
+        get:
+            description: List atau daftar seluruh prodi sesuai fakultas atau kampus daerah yang bersesuaian
+            response:
+                200:
+                    body:
+                        application/json:
+                            examples: |
+                                {
+                                    "data": {
+                                        "namaFakultas": "FIP", 
+                                        "listProdi": [
+                                        {
+                                            "kodeProdi": "A015", 
+                                            "namaProdi": "Administrasi Pendidikan"
+                                        }
+                                    ]}
+                                }
+                404:
+                    body:
+                        application/json:
+                            examples: |
+                                {
+                                    "errors": [
+                                        {
+                                            "status": "404", 
+                                            "title": "Tidak ditemukan", 
+                                            "detail": "Prodi dari fakultas bersangkutan tidak ditemukan"
+                                        }
+                                    ]
+                                }
