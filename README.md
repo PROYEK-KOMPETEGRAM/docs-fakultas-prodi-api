@@ -2,14 +2,14 @@
 
 Dokumentasi Teknis dan Spesifikasi ini dibuat untuk memberi penjelasan terkait open proyek KOMPETEGRAM kepada para anggotanya terutama divisi *Research Group*
 ### **Daftar Isi**
-- [1. Penjelasan Umum]()
-- [2. Penjelasan Proyek]()
-- [3. Luaran]()
-- [4. Endpoint API]()
-- [5. Spesifikasi]()
-- [6. Infrastruktur]()
-- [7. Indikator Pengujian]()
-- [8. Sampel Program]()
+- [1. Penjelasan Umum](https://github.com/PROYEK-KOMPETEGRAM/docs-fakultas-prodi-api#1-penjelasan-umum)
+- [2. Penjelasan Proyek](https://github.com/PROYEK-KOMPETEGRAM/docs-fakultas-prodi-api#2-penjelasan-proyek)
+- [3. Luaran](https://github.com/PROYEK-KOMPETEGRAM/docs-fakultas-prodi-api#3-luaran)
+- [4. Endpoint API](https://github.com/PROYEK-KOMPETEGRAM/docs-fakultas-prodi-api#4-endpoint-api)
+- [5. Spesifikasi](https://github.com/PROYEK-KOMPETEGRAM/docs-fakultas-prodi-api#5-spesifikasi)
+- [6. Infrastruktur](https://github.com/PROYEK-KOMPETEGRAM/docs-fakultas-prodi-api#6-infrastruktur)
+- [7. Indikator Pengujian](https://github.com/PROYEK-KOMPETEGRAM/docs-fakultas-prodi-api#7-indikator-pengujian)
+- [8. Sampel Program](https://github.com/PROYEK-KOMPETEGRAM/docs-fakultas-prodi-api#8-sampel-program)
 - - -
 ## **1. Penjelasan Umum**
 Dokumentasi Teknis dan Spesifikasi ini dibuat untuk memberi penjelasan terkait open proyek pertama KOMPETEGRAM kepada para anggotanya.
@@ -18,7 +18,7 @@ Dokumentasi Teknis dan Spesifikasi ini dibuat untuk memberi penjelasan terkait o
 Proyek yang diangkat adalah API publik yang berisi data dan informasi fakultas, kampus daerah, dan program studi yang ada di Universitas Pendidikan Indonesia (UPI). 
 - - -
 ## **3. Luaran**
-Proyek ini bersifat individu, sehingga terdapat pemilihan program terbaik melalui pengujian dengan *tools* Apache Bench. **Silakan**, lihat pada bagian [indikator]() untuk mengetahui bobot yang diujikan.
+Proyek ini bersifat individu, sehingga terdapat pemilihan program terbaik melalui pengujian dengan *tools* Apache Bench. **Silakan**, lihat pada bagian [indikator](https://github.com/PROYEK-KOMPETEGRAM/docs-fakultas-prodi-api#7-indikator-pengujian) untuk mengetahui bobot yang diujikan.
 - - -
 ## **4. Endpoint API**
 Terdapat lima *endpoint* URL (*resources*) API yang diharapkan dibuat oleh rekan-rekan semua :
