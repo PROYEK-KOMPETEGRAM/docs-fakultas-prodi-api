@@ -85,7 +85,7 @@ Keseluruhan pengujian akan kami akumulasikan pada hasil *request per second*. Pr
 ## **8. Sampel Program**
 Kami juga telah menyediakan sampel program API ini yang dapat digunakan sebagai acuan ataupun referensi. Program ini dibuat dengan bahasa **Python** dan *framework* **Flask** serta menggunakan database **MongoDB Atlas**
 
-[Kunjungi repositori sampel program]()
+[Kunjungi repositori sampel program](https://github.com/satrio-pamungkas/flask-mongodb-fakultas-prodi-api)
 - - -
 ### ***Disclaimer***
 Proyek ini tidak berafliasi ataupun bekerja sama dengan pihak Universitas Pendidikan Indonesia (UPI). Adapun pembuatan API ini bertujuan untuk memberi kemudahan bagi *developer* khususnya mahasisa UPI untuk mengkonsumsi API yang berisi informasi fakultas, kampus daerah, dan program studi.
