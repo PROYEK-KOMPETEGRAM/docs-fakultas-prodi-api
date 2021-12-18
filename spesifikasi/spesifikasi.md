@@ -1,9 +1,11 @@
 # **Spesifikasi Teknis API Fakultas/Kamda - Prodi UPI**
 
-## **List Seluruh Fakultas-Kamda dan Prodi**
+## **A) List Seluruh Fakultas-Kamda dan Prodi**
 Menampilkan informasi seluruh fakultas, kampus daerah, dan program studi beserta kode bersangkutan
 
 **URL** : `/fakultas-prodi`
+
+**Link** : [Public API](https://app.kompetegram.com/fakultas-prodi)
 
 **Method** : `GET`
 
@@ -35,10 +37,12 @@ Menampilkan informasi seluruh fakultas, kampus daerah, dan program studi beserta
 ```
 
 ---
-## **List Seluruh Fakultas-Kamda**
+## **B) List Seluruh Fakultas-Kamda**
 Menampilkan daftar fakultas dan kampus daerah
 
 **URL** : `/fakultas`
+
+**Link** : [Public API](https://app.kompetegram.com/fakultas)
 
 **Method** : `GET`
 
@@ -57,10 +61,12 @@ Menampilkan daftar fakultas dan kampus daerah
 }
 ```
 ---
-## **List Program Studi Spesifik dengan Fakultas**
+## **C) List Program Studi Spesifik dengan Fakultas**
 Menampilkan daftar program studi yang spesifik dengan fakultas atau kampus daerah
 
 **URL** : `/fakultas/{namaFakultas}/prodi`
+
+**Link** : [Public API](https://app.kompetegram.com/fakultas/FPIPS/prodi)
 
 **Method** : `GET`
 
@@ -98,10 +104,12 @@ Menampilkan daftar program studi yang spesifik dengan fakultas atau kampus daera
 }
 ```
 ---
-## **List Seluruh Program Studi**
+## **D) List Seluruh Program Studi**
 Menampilkan seluruh program studi
 
 **URL** : `/prodi`
+
+**Link** : [Public API](https://app.kompetegram.com/prodi)
 
 **Method** : `GET`
 
@@ -125,10 +133,12 @@ Menampilkan seluruh program studi
 }
 ```
 ---
-## **List Program Studi Spesifik**
+## **E) List Program Studi Spesifik**
 Menampilkan program studi secara spesifik sesuai kode
 
 **URL** : `/prodi/{kodeProdi}`
+
+**Link** : [Public API](https://app.kompetegram.com/prodi/G505)
 
 **Method** : `GET`
 
@@ -155,9 +165,9 @@ Menampilkan program studi secara spesifik sesuai kode
 {
     "errors": [
         {
-        "status": "404", 
-        "title": "Tidak ditemukan", 
-        "detail": "Kode prodi tidak ditemukan"
+            "status": "404", 
+            "title": "Tidak ditemukan", 
+            "detail": "Kode prodi tidak ditemukan"
         }
     ]
 }
